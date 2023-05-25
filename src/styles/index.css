@@ -1,10 +1,246 @@
-@import "./settings";
-@import "./components/navigation";
-@import "./components/logo";
-@import "./components/countries";
-@import "./components/card";
-@import "./components/bandeau_acceuil";
-@import "./components/card_logement";
-@import "./components/bandeau_about";
-@import "./components/bandeau_fichelogement"
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** end reset css**/
+
+
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display:flex;
+  max-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#E5E5E5;
+  font-family: "font-1", sans-serif;
+  justify-content: center;
+}
+#root {
+  max-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*------------Ce css concerne uniquement la page d'accueil-----------*/
+
+.page_home {
+  max-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bandeau_nav {
+  display: flex;
+  height: 171px;
+  margin-inline: auto;
+  width: 95%;
+  max-width: 1240px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+  background-color: #FF6060;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 57px;
+}
+.navigation ul a {
+  text-decoration: none;
+  padding: 10px;
+}
+.navigation ul a li {
+  color: #FF6060;
+  cursor: pointer;
+}
+
+.navigation ul .nav-active {
+  position: relative;
+}
+.navigation ul .nav-active::after {
+  content: "";
+  height: 4px;
+  width: 0;
+  background: #FF6060;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: anim 0.3s ease forwards;
+  animation: anim 0.6s ease forwards;
+}
+@-webkit-keyframes anim {
+  to {
+    width: 100%;
+  }
+}
+@keyframes anim {
+  to {
+    width: 100%;
+  }
+}
+
+.bandeau_acceuil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1240px;
+  width: 100%;
+  height: 223px;
+  border-radius: 20px;
+  background: url(../assets/img/fond_gris.png), url(../assets/img/falaise.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-inline: auto;
+}
+.bandeau_acceuil h1 {
+  font-size: 48px;
+  margin-left: 10px;
+  color: rgb(243, 243, 243);
+}
+
+.card_logement {
+  position: relative;
+  height: 100px;
+  width: 160px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.card_logement h2 {
+  font-size: 1rem;
+}
+.card_logement:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+.card_logement:hover .infos {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.card_logement .infos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: rgb(243, 243, 243);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: 0.3s;
+}
+.card_logement img {
+  height: 100px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.bandeau_about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+  width: 1240px;
+  height: 223px;
+  border-radius: 20px;
+  padding: 5px 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
+  background: url(../assets/img/fond_gris.png), url(../assets/img/lac.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bandeau_about h1 {
+  font-size: 48px;
+  margin-left: 10px;
+  color: rgb(243, 243, 243);
+}
+
+.bandeau_fichelogement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1240px;
+  height: 415px;
+  border-radius: 20px;
+  background: url(../assets/img/fond_gris.png), url(../assets/img/loft.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bandeau_fichelogement h1 {
+  font-size: 48px;
+  margin-left: 10px;
+  color: rgb(243, 243, 243);
+}

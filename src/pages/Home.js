@@ -5,7 +5,7 @@ import Bandeau_acceuil from '../components/Bandeau_acceuil';
 
 const Home = () => {
     return (
-        <div>
+        <div className="page_home">
             <Navigation />
             <Bandeau_acceuil />
 

@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 const Navigation = () => {
   return (
-    <div>
+    <div className="bandeau_nav">
       <div>
         <Logo />
       </div>
