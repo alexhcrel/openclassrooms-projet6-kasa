@@ -1,0 +1,23 @@
+.bandeau_about {
+    @include verticalCenter;
+    margin: 5px auto;
+    width: 1240px;
+    height: 223px;
+    border-radius: 20px;
+    padding: 5px 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
+   
+
+    background: url(../../assets/img/fond_gris.png), url(../../assets/img/lac.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+    h1 {
+      font-size: 48px;
+      margin-left: 10px;
+      color: $white;
+    }
+  }
+  

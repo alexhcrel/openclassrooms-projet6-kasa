@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "./Logo";
 
 const Navigation = () => {
   return (
     <div>
       <div>
-        logo Casa à insérer
+        <Logo />
       </div>
 
       <div className="navigation">

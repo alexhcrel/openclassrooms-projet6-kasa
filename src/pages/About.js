@@ -1,10 +1,12 @@
 import React from "react";
 import Navigation from "../components/Navigation";
+import Bandeau_about from "../components/Bandeau_about";
 
 const A_propos = () => {
   return (
     <div>
       <Navigation/>
+      <Bandeau_about />
       <h1>A propose</h1>
 
       <h2>Fiabilité</h2>
