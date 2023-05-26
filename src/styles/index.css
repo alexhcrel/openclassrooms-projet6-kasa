@@ -74,15 +74,17 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 
-/*------------Ce css concerne uniquement la page d'accueil-----------*/
-
-.page_home {
+.page {
+  display: flex;
   max-width: 1440px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bandeau_nav {
@@ -146,19 +148,40 @@ h2 {
   }
 }
 
-.bandeau_acceuil {
+.bandeau {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 1240px;
-  width: 100%;
-  height: 223px;
+  width: 95%;
   border-radius: 20px;
+ 
+}
+.bandeau_acceuil {
+  height: 223px;
   background: url(../assets/img/fond_gris.png), url(../assets/img/falaise.jpg);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  margin-inline: auto;
 }
+
+.bandeau_about {
+  height: 223px;
+  background: url(../assets/img/fond_gris.png), url(../assets/img/lac.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bandeau_fichelogement {
+  width: 1240px;
+  height: 415px;
+  background: url(../assets/img/fond_gris.png), url(../assets/img/loft.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .bandeau_acceuil h1 {
   font-size: 48px;
   margin-left: 10px;
@@ -206,21 +229,7 @@ h2 {
   border-radius: 10px;
 }
 
-.bandeau_about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px auto;
-  width: 1240px;
-  height: 223px;
-  border-radius: 20px;
-  padding: 5px 0;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
-  background: url(../assets/img/fond_gris.png), url(../assets/img/lac.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .bandeau_about h1 {
   font-size: 48px;
   margin-left: 10px;

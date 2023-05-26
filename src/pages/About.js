@@ -4,7 +4,7 @@ import Bandeau_about from "../components/Bandeau_about";
 
 const A_propos = () => {
   return (
-    <div>
+    <div className="page page_about">
       <Navigation/>
       <Bandeau_about />
       <h1>A propose</h1>

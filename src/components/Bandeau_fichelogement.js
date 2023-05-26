@@ -2,7 +2,7 @@ import React from 'react';
 
 const Bandeau_fichelogement = () => {
     return (
-        <div className="bandeau_fichelogement">
+        <div className="bandeau bandeau_fichelogement">
         </div>
     );
 };
