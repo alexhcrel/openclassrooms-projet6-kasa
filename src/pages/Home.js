@@ -10,8 +10,6 @@ const Home = () => {
             <Navigation />
             <Bandeau_acceuil />
             <Container />
-
-            <h1>Acceuil</h1>
         </div>
     );
 };
