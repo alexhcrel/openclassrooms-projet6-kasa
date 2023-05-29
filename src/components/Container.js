@@ -13,8 +13,7 @@ const Container = () => {
     <div className="container">
       <ul>
         {data.map((logement, index) => (
-          // <Card_logement key={index} logement={logement}/>
-          // <li key={index}>{logement.title}</li>
+
 
           <li key={index}>
             <div className="cardlogement">
