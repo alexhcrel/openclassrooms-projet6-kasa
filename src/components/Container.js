@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import jsonData from "../data/logements.json";
 // import Card_logement from './Card_logement';
 
@@ -12,15 +13,16 @@ const Container = () => {
   return (
     <div className="container">
       <ul>
-        {data.map((logement, index) => (
+        {data.map((logement) => (
 
-
-          <li key={index}>
+          <NavLink 
+          to="/fichelogement"
+          key={logement.id}>
             <div className="cardlogement">
               <img src={logement.cover} alt={logement.title} />
-              <h3 key={index}>{logement.title}</h3>
+              <h3>{logement.title}</h3>
             </div>
-          </li>
+          </NavLink>
         ))}
       </ul>
     </div>
