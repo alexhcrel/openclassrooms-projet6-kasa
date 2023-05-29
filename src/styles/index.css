@@ -197,21 +197,23 @@ padding-top: 56px;
 background: #f5eeee;
 border-radius: 25px;
 min-height: min-content;
+margin-bottom: 50px;
 }
 
 .container ul {
   display: grid;
   grid-template-columns: 340px 340px 340px;
-  grid-template-rows: repeat(auto-fit, 390px);
   max-width: 1240px;
   width: 100%;
   justify-content: space-between;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .container ul li {
 width: 340px;
 height: 340px;
+margin-bottom: 50px;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -242,7 +244,6 @@ padding-bottom: 20px;
   width: 100%;
 color: #ffffff;
 }
-
 
 .card_logement {
   position: relative;
