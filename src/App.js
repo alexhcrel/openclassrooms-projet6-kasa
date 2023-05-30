@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Fichelogement from "./pages/Fichelogement";
 import Error from "./pages/Error";
+import Fichelogement from "./pages/Fichelogement";
 
 
 

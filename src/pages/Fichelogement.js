@@ -1,17 +1,21 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Bandeau_fichelogement from '../components/Bandeau_fichelogement';
-
-
+import Descriptifcomplet from '../components/descriptifcomplet/Descriptifcomplet'
 
 
 
 const Fichelogement = () => {
-    return (
+  
+    
+
+   return (
         <div className='page page_fichelogement'>
             <Navigation />
             <Bandeau_fichelogement />
-            <h1>oui</h1>
+            <Descriptifcomplet />
+
+        
             
 
             
