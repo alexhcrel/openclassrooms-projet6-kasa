@@ -4,6 +4,7 @@ import Bandeau_acceuil from '../components/Bandeau_acceuil';
 import Container from '../components/Container';
 
 
+
 const Home = () => {
     return (
         <div className="page page_home">
