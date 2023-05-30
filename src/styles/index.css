@@ -275,7 +275,27 @@ color: #ffffff;
 }
 
 .descriptif_bandeau_left {
-  padding-top: 32px;
+  margin-top: 32px;
+}
+
+.tags {
+ margin-top: 39px;
+  display: flex;
+  gap: 25px;
+ 
+}
+
+.tags h4 {
+  display: flex;
+  background-color: #FF6060;
+  color: #ffffff;
+  min-width: 115px;
+  align-items:  center;
+  justify-content: center;
+  height : 25px;
+  font-size: 14px;
+  border-radius: 50px;
+  
 }
 
 .descriptif_corps {
@@ -284,3 +304,51 @@ color: #ffffff;
   width :100%;
   justify-content: space-between;
 }
+
+.host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  gap:10px
+}
+.host img {
+height: 64px;
+width: 64px;
+border-radius: 50%;
+}
+
+.host h3 {
+  display: flex;
+  max-width: 100px;
+  text-align: right;
+}
+
+.descriptif_corps_left {
+  width: 582px;
+}
+
+.descriptif_corps_right {
+  width: 582px;
+}
+
+
+.equipements {
+  margin-top: 39px;
+   display: flex;
+   gap: 25px;
+  
+ }
+ 
+ .equipements h4 {
+   display: flex;
+   background-color: #FF6060;
+   color: #ffffff;
+   min-width: 115px;
+   align-items:  center;
+   justify-content: center;
+   height : 25px;
+   font-size: 14px;
+   border-radius: 50px;
+   
+ }
