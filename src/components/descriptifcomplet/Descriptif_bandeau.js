@@ -7,7 +7,6 @@ const Descriptif_bandeau = () => {
     <div className="descriptif_bandeau">
       <Descriptif_bandeau_left />
       <Descriptif_bandeau_right />
-      <h1>Descriptif_bandeau</h1>
     </div>
   );
 };

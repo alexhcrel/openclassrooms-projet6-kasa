@@ -7,7 +7,6 @@ const Descriptif_corps = () => {
         <div className='descriptif_corps'>
             <Descriptif_corps_left />
             <Descriptif_corps_right />
-            <h1>Descriptif_corps</h1>
         </div>
     );
 };

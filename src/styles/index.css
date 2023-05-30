@@ -251,3 +251,36 @@ color: #ffffff;
   margin-left: 10px;
   color: rgb(243, 243, 243);
 }
+
+.descriptifcomplet {
+  max-width: 1240px;
+  width: 100%;
+  color: #FF6060;
+}
+.descriptifcomplet h1{
+  font-size :36px;
+}
+
+.descriptifcomplet h3{
+  font-size :18px;
+}
+
+.descriptif_bandeau {
+  display: flex;
+  max-width: 1240px;
+  height: 150px;
+  width :100%;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.descriptif_bandeau_left {
+  padding-top: 32px;
+}
+
+.descriptif_corps {
+  display: flex;
+  max-width: 1240px;
+  width :100%;
+  justify-content: space-between;
+}
