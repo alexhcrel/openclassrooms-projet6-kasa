@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import jsonData from "../data/logements.json";
 import Card from "./Card";
-import Descriptif from "./Descriptif";
+
 
 // import Card_logement from './Card_logement';
 
@@ -19,7 +19,6 @@ const Container = () => {
           <Card key={logement.id} logement={logement} />
         ))}
       </ul>
-
     </div>
   );
 };
