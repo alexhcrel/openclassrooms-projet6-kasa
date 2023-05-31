@@ -19,7 +19,7 @@ const A_propos = () => {
       <Collapse title="Service">
         <p>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</p>
       </Collapse>
-      <Collapse title="Titre 3">
+      <Collapse title="Sécurité">
         <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p>
       </Collapse>
       </div>
