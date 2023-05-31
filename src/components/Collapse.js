@@ -11,7 +11,7 @@ const Collapse = ({ title, children }) => {
   return (
     <div className='valeurs'>
       <button className="collapse-title" onClick={toggleCollapse}>{title}</button>
-      {isOpen && <div>{children}</div>}
+      {isOpen && <div><p className="collapse-paragraph">{children}</p></div>}
     </div>
   );
 };
