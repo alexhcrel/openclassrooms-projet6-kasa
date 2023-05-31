@@ -157,7 +157,7 @@ h2 {
   border-radius: 20px;
  
 }
-.bandeau_acceuil {
+.bandeau_accueil {
   height: 223px;
   background: url(../assets/img/fond_gris.png), url(../assets/img/falaise.jpg);
   background-position: center;
@@ -182,7 +182,7 @@ h2 {
   background-size: cover;
 }
 
-.bandeau_acceuil h1 {
+.bandeau_accueil h1 {
   font-size: 48px;
   margin-left: 10px;
   color: rgb(243, 243, 243);
@@ -399,11 +399,32 @@ align-items: center;
   width: 200%;
   height :300px;
   background-color: black;
-  z-index:0;
   color: white;
   justify-content: center;
 }
 
 .logo_white {
   margin-bottom: 55px;
+}
+.page_error {
+  color: #FF6060;
+  height: 1183px;
+}
+span {
+  font-size: 288px;
+  font-weight: 700;
+  line-height: 410px;;
+}
+
+.message_erreur {
+  font-size: 36px;
+  margin-bottom: 190px;
+}
+
+erreur {
+  margin-bottom: 159px;;
+}
+.erreur a {
+  font-size: 36px;
+
 }
