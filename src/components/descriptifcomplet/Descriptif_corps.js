@@ -1,14 +1,32 @@
-import React from 'react';
-import Descriptif_corps_left from './Descriptif_corps_left';
-import Descriptif_corps_right from './Descriptif_corps_right';
+import React from "react";
+import Collapse from "../Collapse";
+import '../../styles/fichelogement.css';
 
-const Descriptif_corps = () => {
-    return (
-        <div className='descriptif_corps'>
-            <Descriptif_corps_left />
-            <Descriptif_corps_right />
-        </div>
-    );
+const DropdownLeft = () => {
+  const logement = JSON.parse(sessionStorage.getItem("logement"));
+  let equipmentsArray = [];
+  if (logement && logement.equipments) {
+    equipmentsArray = logement.equipments;
+  }
+
+  return (
+    <div className="descriptif_corps">
+      <div>
+        <Collapse title="Description">
+          <p>{logement.description}</p>
+        </Collapse>
+      </div>
+      <div>
+        <Collapse title="Equipements">
+          <p>
+            {equipmentsArray.map((equipment, index) => (
+              <p key={index}>{equipment}</p>
+            ))}
+          </p>
+        </Collapse>
+      </div>
+    </div>
+  );
 };
 
-export default Descriptif_corps;
+export default DropdownLeft;
