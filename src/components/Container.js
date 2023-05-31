@@ -7,6 +7,14 @@ import Titre_fiche from "./Titre_fiche";
 // import Card_logement from './Card_logement';
 
 const Container = () => {
+
+  const handleClick = (logement) => {
+    sessionStorage.clear();
+    sessionStorage.setItem("logement", JSON.stringify(logement));
+    // Naviguer vers la page Fichelogement ici
+  };
+
+
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -14,11 +22,7 @@ const Container = () => {
   }, []);
 
 
-  const handleClick = (logement) => {
-    sessionStorage.clear();
-    sessionStorage.setItem("logement", JSON.stringify(logement));
-    // Naviguer vers la page Fichelogement ici
-  };
+
 
   return (
     <div className="container">

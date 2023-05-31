@@ -1,32 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const Dropdown = () => {
-  const logement = JSON.parse(sessionStorage.getItem('logement'));
+const DropdownRight = () => {
+  const logement = JSON.parse(sessionStorage.getItem("logement"));
   const [isOpen, setIsOpen] = useState(false);
-  const equipementsArray = logement && logement.equipements ? logement.equipements : [];
+  let equipmentsArray = [];
+  if (logement && logement.equipments) {
+    equipmentsArray = logement.equipments;
+  }
 
-  const toggleDropdown = () => {
+  const toggleDropdownRight = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <div className="descriptif_corps_right">
-      <button className="dropdown-toggle" onClick={toggleDropdown}>
-        Toggle Dropdown
+      <button className="dropdown-toggle" onClick={toggleDropdownRight}>
+        <h4>Equipements</h4>
       </button>
+
       {isOpen && (
-        <div className="dropdown-content">
-          <ul>
-            {equipementsArray.map((equipement, index) => (
-              <li key={index}>
-                <h4>{equipement}</h4>
-              </li>
-            ))}
-          </ul>
+        <div className="dropdown-content-right">
+          {equipmentsArray.map((equipment, index) => (
+            <p key={index}>{equipment}</p>
+          ))}
         </div>
       )}
     </div>
   );
 };
 
-export default Dropdown;
+export default DropdownRight;
