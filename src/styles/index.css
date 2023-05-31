@@ -442,3 +442,13 @@ padding-top: 31px;
   height: auto;
   margin-bottom: 100px;
 }
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  width: 209px;
+  
+  gap: 10px;
+  justify-content: bottom;
+
+}
