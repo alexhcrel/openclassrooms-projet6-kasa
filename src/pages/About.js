@@ -2,77 +2,27 @@ import React from "react";
 import Navigation from "../components/Navigation";
 import Bandeau_about from "../components/Bandeau_about";
 import Footer from "../components/Footer";
+import Collapse from "../components/Collapse";
 
 const A_propos = () => {
   return (
     <div className="page page_about">
       <Navigation/>
       <Bandeau_about />
-      <h1>A propose</h1>
-
-      <h2>Fiabilité</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime
-        laboriosam consectetur? Maiores hic iste harum fugit accusamus obcaecati
-        odit, sit nisi aperiam optio ex numquam voluptatibus amet facilis dolor,
-        quidem sed aut asperiores laudantium! Culpa impedit, molestias sint
-        minus laudantium, nemo esse officiis velit tempora obcaecati porro
-        sapiente dignissimos laborum magnam repudiandae. Consequatur, maxime
-        deleniti laborum debitis aperiam enim itaque, ad adipisci minus
-        recusandae blanditiis quos suscipit dolorem corrupti. Molestiae atque
-        voluptatum iure, exercitationem deleniti quas perspiciatis voluptas
-        doloribus ipsam, modi qui, asperiores esse mollitia repudiandae illo?
-        Omnis deserunt quos, voluptatibus odit minima rerum commodi dolore modi
-        eum dolorum.
-      </p>
-      <br />
-      <h2>Respect</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime
-        laboriosam consectetur? Maiores hic iste harum fugit accusamus obcaecati
-        odit, sit nisi aperiam optio ex numquam voluptatibus amet facilis dolor,
-        quidem sed aut asperiores laudantium! Culpa impedit, molestias sint
-        minus laudantium, nemo esse officiis velit tempora obcaecati porro
-        sapiente dignissimos laborum magnam repudiandae. Consequatur, maxime
-        deleniti laborum debitis aperiam enim itaque, ad adipisci minus
-        recusandae blanditiis quos suscipit dolorem corrupti. Molestiae atque
-        voluptatum iure, exercitationem deleniti quas perspiciatis voluptas
-        doloribus ipsam, modi qui, asperiores esse mollitia repudiandae illo?
-        Omnis deserunt quos, voluptatibus odit minima rerum commodi dolore modi
-        eum dolorum.
-      </p>
-      <br />
-      <h2>Service</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime
-        laboriosam consectetur? Maiores hic iste harum fugit accusamus obcaecati
-        odit, sit nisi aperiam optio ex numquam voluptatibus amet facilis dolor,
-        quidem sed aut asperiores laudantium! Culpa impedit, molestias sint
-        minus laudantium, nemo esse officiis velit tempora obcaecati porro
-        sapiente dignissimos laborum magnam repudiandae. Consequatur, maxime
-        deleniti laborum debitis aperiam enim itaque, ad adipisci minus
-        recusandae blanditiis quos suscipit dolorem corrupti. Molestiae atque
-        voluptatum iure, exercitationem deleniti quas perspiciatis voluptas
-        doloribus ipsam, modi qui, asperiores esse mollitia repudiandae illo?
-        Omnis deserunt quos, voluptatibus odit minima rerum commodi dolore modi
-        eum dolorum.
-      </p>
-      <br />
-      <h2>Sécurité</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime
-        laboriosam consectetur? Maiores hic iste harum fugit accusamus obcaecati
-        odit, sit nisi aperiam optio ex numquam voluptatibus amet facilis dolor,
-        quidem sed aut asperiores laudantium! Culpa impedit, molestias sint
-        minus laudantium, nemo esse officiis velit tempora obcaecati porro
-        sapiente dignissimos laborum magnam repudiandae. Consequatur, maxime
-        deleniti laborum debitis aperiam enim itaque, ad adipisci minus
-        recusandae blanditiis quos suscipit dolorem corrupti. Molestiae atque
-        voluptatum iure, exercitationem deleniti quas perspiciatis voluptas
-        doloribus ipsam, modi qui, asperiores esse mollitia repudiandae illo?
-        Omnis deserunt quos, voluptatibus odit minima rerum commodi dolore modi
-        eum dolorum.
-      </p>
+      <div className="collapse_about">
+      <Collapse title ="Fiabilité">
+        <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</p>
+      </Collapse>
+      <Collapse title="Respect">
+        <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
+      </Collapse>
+      <Collapse title="Service">
+        <p>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</p>
+      </Collapse>
+      <Collapse title="Titre 3">
+        <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p>
+      </Collapse>
+      </div>
       <Footer />
     </div>
     

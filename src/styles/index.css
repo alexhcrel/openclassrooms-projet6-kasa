@@ -411,6 +411,8 @@ align-items: center;
   height: 1183px;
 }
 span {
+  display: flex;
+  justify-content: center;
   font-size: 288px;
   font-weight: 700;
   line-height: 410px;;
@@ -421,10 +423,12 @@ span {
   margin-bottom: 190px;
 }
 
-erreur {
+.erreur {
   margin-bottom: 159px;;
 }
 .erreur a {
+  display: flex;
   font-size: 36px;
-
+  justify-content: center;
+  color: #FF6060
 }
