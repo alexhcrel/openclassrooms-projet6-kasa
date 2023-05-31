@@ -7,18 +7,14 @@ import Fichelogement from "./pages/Fichelogement";
 
 
 
-
-
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/fichelogement" element={<Fichelogement />} />
-        <Route path="/error" element={<Error />} />
+        <Route path="/fichelogement:id" element={<Fichelogement />} />
         <Route path="*" element={<Error />} />
-
       </Routes>
     </BrowserRouter>
   );
