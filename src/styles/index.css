@@ -391,7 +391,19 @@ p {
 line-height: 25px;
 }
 
-footer {
-  height :250px;
+.footer {
+  display: flex;
+  flex-direction: column;
+padding-top: 66px;
+align-items: center;
+  width: 200%;
+  height :300px;
   background-color: black;
+  z-index:0;
+  color: white;
+  justify-content: center;
+}
+
+.logo_white {
+  margin-bottom: 55px;
 }
