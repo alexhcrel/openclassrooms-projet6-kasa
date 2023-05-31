@@ -390,3 +390,8 @@ font-weight: 100;
 p {
 line-height: 25px;
 }
+
+footer {
+  height :250px;
+  background-color: black;
+}

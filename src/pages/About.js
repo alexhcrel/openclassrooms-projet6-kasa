@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import Bandeau_about from "../components/Bandeau_about";
+import Footer from "../components/Footer";
 
 const A_propos = () => {
   return (
@@ -72,7 +73,9 @@ const A_propos = () => {
         Omnis deserunt quos, voluptatibus odit minima rerum commodi dolore modi
         eum dolorum.
       </p>
+      <Footer />
     </div>
+    
   );
 };
 
