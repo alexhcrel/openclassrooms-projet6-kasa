@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './styles/index.css';
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Error from "./pages/Error";
-import Fichelogement from "./pages/Fichelogement";
+import Fichelogement from "./pages/FicheLogement";
 
 
 
@@ -11,9 +12,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home />} />
+      <Route path="fichelogement" element={<Fichelogement />} />
         <Route path="/about" element={<About />} />
-        <Route path="/fichelogement" element={<Fichelogement />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
