@@ -13,9 +13,9 @@ const App = () => {
     <BrowserRouter>
       <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="fichelogement" element={<Fichelogement />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Error />} />
+      <Route path={`/fichelogement/:logementId`} element={<Fichelogement />} />
+      <Route path="/about" element={<About />} />
+      <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );

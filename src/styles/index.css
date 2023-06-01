@@ -271,7 +271,7 @@ h2 {
   margin-left: 10px;
   color: rgb(243, 243, 243);
 }
-.container {
+.cards {
   margin-top: 43px;
   display: flex;
   max-width: 1240px;
@@ -291,11 +291,11 @@ h2 {
   margin-bottom: 50px;
 }
 
-/* .container ul {
+/* .cards ul {
   
 } */
 
-.container .card {
+.cards .card {
   width: 340px;
   height: 340px;
   margin-bottom: 50px;

@@ -1,10 +1,11 @@
 import React from 'react';
+import Banner from '../components/Banner'
 
 const FicheLogement = () => {
     return (
         <div>
-         fiche logemeeeee
-         
+            <Banner />
+            fiche de logement
         </div>
     );
 };
