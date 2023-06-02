@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import jsonData from "../data/logements.json";
 import { NavLink } from "react-router-dom";
-import Descriptif from "./Descriptif";
 
 // import Card_logement from './Card_logement';
 
@@ -22,7 +21,7 @@ const Container = () => {
       {hello}
       {data.map((logement) => (
         <div>
-          <Descriptif key={logement.title} logement={logement} />
+ 
 
           <NavLink
             to={`/fichelogement/${logement.id}`}

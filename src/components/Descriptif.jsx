@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Descriptif = ({logement}) => {
-    console.log(logement)
+const Descriptif = () => {
+
    
     return (
         <div className='descriptif'>
