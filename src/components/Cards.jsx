@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import jsonData from "../data/logements.json";
 import { NavLink } from "react-router-dom";
+import Descriptif from "./Descriptif";
 
 // import Card_logement from './Card_logement';
 
-const Container = () => {
+const Cards = () => {
   const [data, setData] = useState([]);
   const [hello, setHello] = useState("hello les amis");
 
@@ -21,7 +22,7 @@ const Container = () => {
       {hello}
       {data.map((logement) => (
         <div>
- 
+          <Descriptif key={logement.title} logement={logement} />
 
           <NavLink
             to={`/fichelogement/${logement.id}`}
@@ -43,4 +44,4 @@ const Container = () => {
   );
 };
 
-export default Container;
+export default Cards;
