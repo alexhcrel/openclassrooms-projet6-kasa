@@ -22,11 +22,11 @@ const Container = () => {
       {hello}
       {data.map((logement) => (
         <div>
-          <Descriptif key={logement.id} logement={logement} />
+          <Descriptif key={logement.title} logement={logement} />
 
           <NavLink
             to={`/fichelogement/${logement.id}`}
-            // key={logement.id}
+            key={logement.id}
             state={{ logement }}
           >
             <div
