@@ -7,19 +7,16 @@ import Descriptif from "./Descriptif";
 
 const Cards = () => {
   const [data, setData] = useState([]);
-  const [hello, setHello] = useState("hello les amis");
+ 
 
   useEffect(() => {
     setData(jsonData);
   }, []);
-  useEffect(() => {
-    setHello("brouhaaha");
-  }, []);
+
 
 
   return (
     <div className="cards">
-      {hello}
       {data.map((logement) => (
         <div>
           <Descriptif key={logement.title} logement={logement} />
