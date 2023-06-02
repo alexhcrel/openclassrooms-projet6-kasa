@@ -9,8 +9,11 @@ const Home = () => {
         <div>
         <Banner />
         <Cards />
+  
         </div>
     );
 };
+
+
 
 export default Home;
