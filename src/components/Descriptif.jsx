@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-const Descriptif = () => {
+const Descriptif = ({ objet }) => {
+  console.log(objet);
 
-   
-    return (
-        <div className='descriptif'>
-            <h2>"fait chier là"</h2>
-        </div>
-    );
+  return (
+    <div className="descriptif" key={objet.id.id}>
+      <h2>{objet.title}</h2>
+    </div>
+  );
 };
 
 export default Descriptif;

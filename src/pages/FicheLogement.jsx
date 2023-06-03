@@ -16,16 +16,14 @@ const FicheLogement = () => {
   const { logementId } = useParams();
 
   const objet = jsonData.find((item) => item.id === logementId);
-  console.log(objet);
+
 
   return (
     <div>
       <Navigation />
       <Banner_fichelogement />
-      <div className="cards">
-        <p>{objet.title}</p>
-      </div>
-
+      <div key={objet.id.id}></div>
+      <Descriptif key={objet.id.id} objet={objet} />
       <Footer />
     </div>
   );
