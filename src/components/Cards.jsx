@@ -1,32 +1,24 @@
-import React, { useEffect, useState } from "react";
-import jsonData from "../data/logements.json";
+import React from "react";
+// import jsonData from "../data/logements.json";
 import { NavLink } from "react-router-dom";
-import Descriptif from "./Descriptif";
 
 // import Card_logement from './Card_logement';
 
-const Cards = () => {
-  const [data, setData] = useState([]);
- 
+const Cards = ({logement}) => {
+  console.log(logement)
+  // const [data, setData] = useState([]);
 
-  useEffect(() => {
-    setData(jsonData);
-  }, []);
+  // useEffect(() => {
+  //   setData(jsonData);
+  // }, []);
 
+  return (            <NavLink to={`/fichelogement/${logement.id}`}
+  key={logement.title}
+  state={{ logement }}
 
+>
 
-  return (
-    <div className="cards">
-      {data.map((logement) => (
-        <div>
-          <Descriptif key={logement.title} logement={logement} />
-
-          <NavLink
-            to={`/fichelogement/${logement.id}`}
-            key={logement.id}
-            state={{ logement }}
-          >
-            <div
+  <div
               className="card" /*onClick={() => handleClick("http://localhost:3000/fichelogement")}*/
             >
               <div className="cardlogement">
@@ -34,10 +26,8 @@ const Cards = () => {
                 <h3>{logement.title}</h3>
               </div>
             </div>
-          </NavLink>
-        </div>
-      ))}
-    </div>
+              </NavLink>
+
   );
 };
 
