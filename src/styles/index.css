@@ -167,7 +167,7 @@ body {
   align-items: center;
 }
 
-.bandeau_nav {
+.Banner_nav {
   display: flex;
   height: 171px;
   margin-inline: auto;
@@ -233,7 +233,7 @@ h2 {
   }
 }
 */
-.bandeau {
+.Banner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,7 +241,7 @@ h2 {
   width: 95%;
   border-radius: 20px;
 }
-.bandeau_accueil {
+.Banner_accueil {
   height: 223px;
   background: url(../assets/img/fond_gris.png), url(../assets/img/falaise.jpg);
   background-position: center;
@@ -249,7 +249,7 @@ h2 {
   background-size: cover;
 }
 
-.bandeau_about {
+.BannerAbout {
   height: 223px;
   background: url(../assets/img/fond_gris.png), url(../assets/img/lac.jpg);
   background-position: center;
@@ -257,7 +257,7 @@ h2 {
   background-size: cover;
 }
 
-.bandeau_fichelogement {
+.Banner_fichelogement {
   width: 1240px;
   height: 415px;
   background: url(../assets/img/fond_gris.png), url(../assets/img/loft.jpg);
@@ -266,7 +266,7 @@ h2 {
   background-size: cover;
 }
 
-.bandeau_accueil h1 {
+.Banner_accueil h1 {
   font-size: 48px;
   margin-left: 10px;
   color: rgb(243, 243, 243);
@@ -329,7 +329,7 @@ h2 {
   color: #ffffff;
 }
 
-.bandeau_about h1 {
+.Banner_about h1 {
   font-size: 48px;
   margin-left: 10px;
   color: rgb(243, 243, 243);
@@ -348,7 +348,7 @@ h2 {
   font-size: 18px;
 }
 
-.descriptif_bandeau {
+.descriptif_Banner {
   display: flex;
   max-width: 1240px;
   min-height: 150px;
@@ -357,7 +357,7 @@ h2 {
   margin-bottom: 26px;
 }
 
-.descriptif_bandeau_left {
+.descriptif_Banner_left {
   margin-top: 32px;
 }
 

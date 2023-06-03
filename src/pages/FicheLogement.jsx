@@ -1,31 +1,33 @@
 import { useParams } from "react-router-dom";
-import React , { useEffect, useState }from 'react';
-import Banner from '../components/Banner'
-import Descriptif from '../components/Descriptif';
+import React, { useEffect, useState } from "react";
+import BannerFicheLogement from "../components/BannerFicheLogement";
+import Descriptif from "../components/Descriptif";
 import jsonData from "../data/logements.json";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const FicheLogement = () => {
-    const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
-    useEffect(() => {
-      setData(jsonData);
-    }, []);
+  useEffect(() => {
+    setData(jsonData);
+  }, []);
 
-   
-    const {logementId} = useParams();
+  const { logementId } = useParams();
 
-    const objet = jsonData.find(item => item.id === logementId);
- console.log(objet)
+  const objet = jsonData.find((item) => item.id === logementId);
+  console.log(objet);
 
-
-    return (
-        <div>
-            <Banner />
-            <div className="cards">
-      <p>{objet.title}</p>
+  return (
+    <div>
+      <Navigation />
+      <BannerFicheLogement />
+      <div className="cards">
+        <p>{objet.title}</p>
+      </div>
+      <Footer />
     </div>
-        </div>
-    );
+  );
 };
 
 export default FicheLogement;
