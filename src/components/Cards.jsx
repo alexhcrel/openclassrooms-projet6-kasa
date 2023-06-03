@@ -12,21 +12,23 @@ const Cards = ({logement}) => {
   //   setData(jsonData);
   // }, []);
 
-  return (            <NavLink to={`/fichelogement/${logement.id}`}
-  key={logement.title}
-  state={{ logement }}
-
->
-
-  <div
-              className="card" /*onClick={() => handleClick("http://localhost:3000/fichelogement")}*/
-            >
-              <div className="cardlogement">
-                <img src={logement.cover} alt={logement.title} />
-                <h3>{logement.title}</h3>
-              </div>
-            </div>
-              </NavLink>
+  return (        
+    
+    <NavLink
+    to={`/fichelogement/${logement.id}`}
+    key={logement.id}
+    state={{ logement }}
+  >
+    <div
+      className="card" /*onClick={() => handleClick("http://localhost:3000/fichelogement")}*/
+    >
+      <div className="cardlogement">
+        <img src={logement.cover} alt={logement.title} />
+        <h3>{logement.title}</h3>
+      </div>
+    </div>
+    <p>ok</p>
+  </NavLink>
 
   );
 };
