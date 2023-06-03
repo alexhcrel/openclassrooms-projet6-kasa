@@ -1,16 +1,12 @@
 import React from "react";
-// import jsonData from "../data/logements.json";
+
 import { NavLink } from "react-router-dom";
 
-// import Card_logement from './Card_logement';
+
 
 const Cards = ({logement}) => {
   console.log(logement)
-  // const [data, setData] = useState([]);
-
-  // useEffect(() => {
-  //   setData(jsonData);
-  // }, []);
+  
 
   return (        
     
