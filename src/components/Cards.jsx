@@ -27,7 +27,7 @@ const Cards = ({logement}) => {
         <h3>{logement.title}</h3>
       </div>
     </div>
-    <p>ok</p>
+    
   </NavLink>
 
   );
