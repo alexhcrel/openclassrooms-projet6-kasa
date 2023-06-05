@@ -34,7 +34,7 @@ setCurrentIndex(newIndex)
       >
         <div className="arrow leftArrow" onClick={goToPrevious}>‹</div>
 
-        <div className="arrow rightArrow"onClick={goToNext}>›</div>
+        <div className="arrow rightArrow" onClick={goToNext}>›</div>
       </div>
     </div>
 
