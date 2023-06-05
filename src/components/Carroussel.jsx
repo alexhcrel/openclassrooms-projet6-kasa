@@ -1,28 +1,32 @@
 import React from "react";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
-import '../styles/carroussel.css';
+
+import "../styles/carroussel.css";
 
 const Carroussel = ({ objet }) => {
-const slides =[]
-
+  const slides = [];
 
   let picturesArray = [];
   if (objet && objet.pictures) {
     picturesArray = objet.pictures;
   }
 
-  console.log(objet);
+  console.log(picturesArray);
 
   return (
+    <div className="sliderStyles">
+      <div
+        className="slideStyles"
+        style={{ backgroundImage: `url(${picturesArray[0]})`}}
+      >
+        <div className="arrow leftArrow">‹</div>
 
-<h3>mes slides</h3>
-<ImageSlider slides={slides}/>
+        <div className="arrow rightArrow">›</div>
+      </div>
+    </div>
 
+    //<ImageSlider slides={slides}/>
 
-
-
-   /* <Slide className="carroussel" key={objet.id.id}>
+    /* <Slide className="carroussel" key={objet.id.id}>
       {picturesArray.map((picturesArray) => (
         <div style={{ backgroundImage: `url(${picturesArray})` }}>
 

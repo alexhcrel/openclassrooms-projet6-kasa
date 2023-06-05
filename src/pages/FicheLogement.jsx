@@ -5,6 +5,8 @@ import jsonData from "../data/logements.json";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Carroussel from "../components/Carroussel";
+import '../styles/carroussel.css';
+
 
 const FicheLogement = () => {
   const [data, setData] = useState([]);
@@ -19,12 +21,10 @@ const FicheLogement = () => {
 
 
   return (
-    <div>
+    <div className="fichelogement">
 
-      <Navigation />
-  
-      <div key={objet.id.id}></div>
-      <Carroussel key={objet.id} objet = {objet}/>
+      <Navigation />      
+      <div className="carroussel"><Carroussel key={objet.id} objet = {objet}/></div>
       <Descriptif key={objet.id.id} objet={objet} />
       <Footer />
     </div>

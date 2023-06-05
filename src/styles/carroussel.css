@@ -1,29 +1,42 @@
 
-.react-slideshow-container {
-display: flex;
-justify-content: center;
-max-width : 1240px;
-}
-button svg {
-    color: white;
-}
 
-.react-slideshow-container .default-nav {
-margin:23px;
-background-color: transparent;
-}
-
-
-
-.react-slideshow-wrapper {
-height: 415px;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-border-radius: 25px;
-}
-
-
-.images-wrap div {
+.carroussel {
+  
+    max-width : 1240px;
     height: 415px;
+    margin-inline: auto;
+    border-radius: 25px;
 }
+
+.carroussel .sliderStyles { 
+    height: 415px;
+    width: 100%;
+}
+
+
+.slideStyles {
+    width: 1240px;
+display:flex;
+position: relative;
+height : 415px;
+align-items: center;
+justify-content: space-between;
+flex-wrap: nowrap;
+background-position: center;
+background-size: cover;
+}
+
+.arrow {
+font-size : 179px;
+color: white;
+
+
+}
+
+ .leftArrow {
+padding-left: 23px;  
+}
+
+.rightArrow {
+    padding-right: 23px;  
+    }
