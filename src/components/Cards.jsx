@@ -3,7 +3,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Cards = ({ logement }) => {
-  console.log(logement);
+
 
   return (
     <NavLink
