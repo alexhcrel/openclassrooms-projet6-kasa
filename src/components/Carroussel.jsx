@@ -4,6 +4,9 @@ import "react-slideshow-image/dist/styles.css";
 import '../styles/carroussel.css';
 
 const Carroussel = ({ objet }) => {
+const slides =[]
+
+
   let picturesArray = [];
   if (objet && objet.pictures) {
     picturesArray = objet.pictures;
@@ -12,13 +15,21 @@ const Carroussel = ({ objet }) => {
   console.log(objet);
 
   return (
-    <Slide className="carroussel" key={objet.id.id}>
+
+<h3>mes slides</h3>
+<ImageSlider slides={slides}/>
+
+
+
+
+   /* <Slide className="carroussel" key={objet.id.id}>
       {picturesArray.map((picturesArray) => (
         <div style={{ backgroundImage: `url(${picturesArray})` }}>
 
         </div>
       ))}
     </Slide>
+    */
   );
 };
 

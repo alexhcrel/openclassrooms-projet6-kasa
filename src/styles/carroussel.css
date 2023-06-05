@@ -3,14 +3,20 @@
 display: flex;
 justify-content: center;
 max-width : 1240px;
-
-
+}
+button svg {
+    color: white;
 }
 
-.react-slideshow-wrapper {
-    
-    height: 415px;
+.react-slideshow-container .default-nav {
+margin:23px;
+background-color: transparent;
+}
 
+
+
+.react-slideshow-wrapper {
+height: 415px;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -20,8 +26,4 @@ border-radius: 25px;
 
 .images-wrap div {
     height: 415px;
-}
-
-button {
-    margin: 23px;
 }

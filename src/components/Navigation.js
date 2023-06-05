@@ -3,6 +3,11 @@ import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 
 const Navigation = () => {
+
+
+
+
+  
   return (
     <div className="Banner_nav">
       <div>

@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import Descriptif from "../components/Descriptif";
 import jsonData from "../data/logements.json";
-import Banner_fichelogement from "../components/BannerFicheLogement";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Carroussel from "../components/Carroussel";
