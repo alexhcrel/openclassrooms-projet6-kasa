@@ -1,21 +1,24 @@
-.carroussel {
-    border-radius: 25px
+
+.react-slideshow-container {
+display: flex;
+justify-content: center;
+
+
 }
 
-.each-slide-effect > div {
-    max-width: 120px;
-    min-height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    height: 350px;
-    ;
-  }
-  
-  .each-slide-effect span {
-    padding: 20px;
-    font-size: 20px;
-    background: #efefef;
-    text-align: center;
-  }
+.react-slideshow-wrapper {
+    
+    height: 415px;
+   max-width : 1240px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 25px;
+}
+
+
+.images-wrap div {
+    height: 415px;
+}
+
+
