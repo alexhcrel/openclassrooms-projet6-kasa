@@ -15,7 +15,7 @@ const Carroussel = ({ objet }) => {
     <Slide className="carroussel" key={objet.id.id}>
       {picturesArray.map((picturesArray) => (
         <div style={{ backgroundImage: `url(${picturesArray})` }}>
-          
+
         </div>
       ))}
     </Slide>

@@ -2,6 +2,7 @@
 .react-slideshow-container {
 display: flex;
 justify-content: center;
+max-width : 1240px;
 
 
 }
@@ -9,7 +10,7 @@ justify-content: center;
 .react-slideshow-wrapper {
     
     height: 415px;
-   max-width : 1240px;
+
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -21,4 +22,6 @@ border-radius: 25px;
     height: 415px;
 }
 
-
+button {
+    margin: 23px;
+}
