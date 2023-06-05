@@ -51,7 +51,7 @@ setCurrentIndex(newIndex)
       </div>
     </div>
    
-   
+ 
   );
 };
 
