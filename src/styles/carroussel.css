@@ -1,8 +1,8 @@
 
 
 .carroussel {
-  
-    max-width : 1240px;
+     max-width : 1240px;
+     width: 95%;
     height: 415px;
     margin-inline: auto;
     border-radius: 25px;
@@ -15,7 +15,7 @@
 
 
 .slideStyles {
-    width: 1240px;
+    width: 100%;
 display:flex;
 position: relative;
 height : 415px;
@@ -29,8 +29,7 @@ background-size: cover;
 .arrow {
 font-size : 179px;
 color: white;
-
-
+cursor: pointer;
 }
 
  .leftArrow {
