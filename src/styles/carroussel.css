@@ -13,17 +13,15 @@
     width: 100%;
 }
 
-
 .slideStyles {
-    width: 100%;
-display:flex;
-position: relative;
-height : 415px;
-align-items: center;
-justify-content: space-between;
-flex-wrap: nowrap;
-background-position: center;
-background-size: cover;
+  width: 100%;
+  display: flex;
+  position: relative;
+  height: 415px;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-between;
 }
 
 .arrow {
