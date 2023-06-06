@@ -61,6 +61,7 @@ p {
     align-items: center;
     margin-top: 24px;
     gap: 10px;
+    margin-bottom: 27px;
   }
   .host img {
     height: 64px;
@@ -72,4 +73,15 @@ p {
     display: flex;
     max-width: 100px;
     text-align: right;
+  }
+
+  .descriptif_bandeau_right {
+ display: flex;
+ flex-direction: column;
+ justify-content: right;
+  }
+
+  .stars {
+    display: flex;
+    justify-content: space-between;
   }
