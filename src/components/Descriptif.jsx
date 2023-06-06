@@ -14,26 +14,15 @@ const Descriptif = ({ objet }) => {
   }
 
   const note = objet.rating;
-  const noteInverse = 5 - note;
   const items = [];
-
+  
   for (let i = 0; i < 5; i++) {
-    items.push(<img src="../redstar.png" />);
+    if (i < note) {
+      items.push(<img key={`redstar-${i}`} src="../redstar.png" />);
+    } else {
+      items.push(<img key={`greystar-${i}`} src="../greystar.png" />);
+    }
   }
-
-  for (let j = 0; j < noteInverse; j++) {
-    items.pop();
-  }
-  for (let k = 0; k < noteInverse; k++) {
-    items.push(<img src="../greystar.png" />);
-  }
-  //
-
-  // for (let i = 0; i < note; i++) {
-  //
-
-  //   if (i < 5) {
-  //     itemsInverse.pop(<img key={`greystar-${i}`} src="../greystar.png" />);
 
   return (
     <div className="descriptifComplet" key={objet.id.id}>
