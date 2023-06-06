@@ -57,11 +57,11 @@ const Descriptif = ({ objet }) => {
         </div>
         <div>
           <Collapse title="Equipements">
-            <p>
+            <div>
               {equipmentsArray.map((equipment, index) => (
                 <p key={index}>{equipment}</p>
               ))}
-            </p>
+            </div>
           </Collapse>
         </div>
       </div>
