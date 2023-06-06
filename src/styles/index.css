@@ -275,64 +275,8 @@ h2 {
   margin-left: 10px;
   color: rgb(243, 243, 243);
 }
-.cards {
-  margin-inline: auto;
-  margin-top: 43px;
-  display: flex;
-  max-width: 1240px;
-  width: 95%;
-  padding-inline: 50px;
-  padding-top: 56px;
-  background: #f5eeee;
-  border-radius: 25px;
-  min-height: min-content;
-  margin-bottom: 50px;
-  display: grid;
-  grid-template-columns: 340px 340px 340px;
-  max-width: 1240px;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-}
 
-/* .cards ul {
-  
-} */
 
-.cards .card {
-  width: 340px;
-  height: 340px;
-  margin-bottom: 50px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  align-items: stretch;
-}
-
-.cardlogement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  row-gap: 50px;
-  background-color: #ff6060;
-  border-radius: 18px;
-  padding-top: 15px;
-  padding-bottom: 20px;
-}
-.cardlogement img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 18px;
-}
-
-.cardlogement h3 {
-  width: 100%;
-  color: #ffffff;
-}
 
 .Banner_about h1 {
   font-size: 48px;

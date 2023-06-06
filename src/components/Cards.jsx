@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/cards.css';
 
 import { NavLink } from "react-router-dom";
 
@@ -14,8 +15,13 @@ const Cards = ({ logement }) => {
       <div
         className="card" /*onClick={() => handleClick("http://localhost:3000/fichelogement")}*/
       >
-        <div className="cardlogement">
-          <img src={logement.cover} alt={logement.title} />
+        <div className="cardlogement" style={{
+        backgroundImage:`linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(${logement.cover})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      }}>
+
           <h3>{logement.title}</h3>
         </div>
       </div>
