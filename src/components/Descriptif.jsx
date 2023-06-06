@@ -18,7 +18,7 @@ const Descriptif = ({ objet }) => {
                 <div className="descriptif_bandeau_left">
                     <div>
                         <h1>{objet.title}</h1>
-                        <h3>{objet.location}</h3>
+                        <p>{objet.location}</p>
                     </div>
                     <div className="tags">
                         {tagsArray.map((tag, index) => (
@@ -29,17 +29,13 @@ const Descriptif = ({ objet }) => {
 
                 <div className='descriptif_bandeau_right'>
                     <div className='host'>
-                        <h3>{objet.host.name}</h3>
+                        <p>{objet.host.name}</p>
                         <img src={objet.host.picture} alt={objet.title} />
                     </div>
                     <div className="stars">
 
                     </div>
                 </div>
-
-
-
-
             </div>
 
 

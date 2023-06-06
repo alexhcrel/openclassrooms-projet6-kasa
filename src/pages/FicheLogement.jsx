@@ -6,6 +6,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Carroussel from "../components/Carroussel";
 import '../styles/carroussel.css';
+import '../styles/fichelogement.css';
 
 
 const FicheLogement = () => {
