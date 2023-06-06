@@ -12,6 +12,7 @@ const Descriptif = ({ objet }) => {
         equipmentsArray = objet.equipments;
     }
 
+
     return (
         <div className="descriptifComplet" key={objet.id.id}>
             <div className="descriptif_bandeau">
@@ -27,16 +28,41 @@ const Descriptif = ({ objet }) => {
                     </div>
                 </div>
 
+
+
+
+
+
+
                 <div className='descriptif_bandeau_right'>
                     <div className='host'>
                         <p>{objet.host.name}</p>
                         <img src={objet.host.picture} alt={objet.title} />
                     </div>
+
+                
+
+
+
                     <div className="stars">
 
+                   
+
                     </div>
+
+
+
+
+
+
                 </div>
             </div>
+
+
+
+
+
+
 
 
             <div className="descriptif_corps">
