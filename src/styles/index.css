@@ -157,6 +157,8 @@ body {
   justify-content: center;
 }
 
+
+
 .page {
   display: flex;
   max-width: 1440px;
@@ -234,6 +236,7 @@ h2 {
 }
 */
 .Banner {
+  margin-inline: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,6 +245,7 @@ h2 {
   border-radius: 20px;
 }
 .Banner_accueil {
+  margin-inline: auto;
   height: 223px;
   background: url(../assets/img/fond_gris.png), url(../assets/img/falaise.jpg);
   background-position: center;
@@ -272,6 +276,7 @@ h2 {
   color: rgb(243, 243, 243);
 }
 .cards {
+  margin-inline: auto;
   margin-top: 43px;
   display: flex;
   max-width: 1240px;
@@ -445,6 +450,7 @@ span {
 }
 
 .collapse_about {
+  margin-inline: auto;
   display: flex;
   padding-top: 31px;
   flex-direction: column;

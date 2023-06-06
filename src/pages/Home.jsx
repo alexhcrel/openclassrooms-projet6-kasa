@@ -13,7 +13,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="listelogement">
+    <div className="home">
       <Navigation />
       <Banner />
       <div className="cards">
