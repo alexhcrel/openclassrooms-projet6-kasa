@@ -1,3 +1,4 @@
+
 .descriptif_bandeau {
   display: flex;
   justify-content: space-between;
@@ -84,4 +85,25 @@ p {
   .stars {
     display: flex;
     justify-content: space-between;
+  }
+
+
+
+
+  @media screen and (max-width: 600px) {
+
+
+    .descriptifComplet {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+    }
+    
+    .descriptif_bandeau {
+      flex-direction: column;
+      margin-inline: 20px;
+      margin-top: 30px;
+    }
+
+
   }

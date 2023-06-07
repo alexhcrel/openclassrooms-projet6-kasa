@@ -39,7 +39,7 @@ const Carroussel = ({ objet }) => {
           <div className="fleches">
               <img onClick={goToPrevious} src ="../fleche-left.png" />
          
-              <img onClick={goToPrevious} src ="../fleche-right.png" />
+              <img onClick={goToNext} src ="../fleche-right.png" />
               </div>
               <div className="numerotation">
         <p>{currentIndex + 1}/{picturesArray.length}</p>
