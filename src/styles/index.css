@@ -164,40 +164,6 @@ body {
   align-items: center;
 }
 
-/* ----------------------------------------------a faire -------------------------------------------*/
-.Banner {
-  margin-inline: auto;
-  height: 223px;
-  max-width: 1240px;
-  width: 95%;
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* ok */
-.Banner_accueil {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(../assets/img/fond_gris.png), url(../assets/img/falaise.jpg);
-  background-position: center;
-}
-
-/* ok */
-.Banner_accueil h1 {
-  font-size: 48px;
-  margin-left: 10px;
-  color: rgb(243, 243, 243);
-}
-
-/* ok */
-.BannerAbout {
-  background: url(../assets/img/fond_gris.png), url(../assets/img/lac.jpg);
-  background-position: center;
-}
-
-
 
 
 .footer {
@@ -244,23 +210,7 @@ body {
 
 @media screen and (max-width: 600px) {
 
-.Banner_accueil {
-  height: 111px;
-  width: 95%;
-  justify-content: left;
-}
 
-.Banner_accueil h1 {
-  font-size: 24px;
-  margin-left: 16px;
-  width: 220px;
-}
-
-.collapse_about {
-  padding-top: 19px;
-  margin-bottom: 100px;
-  row-gap: 31px;
-}
 
 
 }
