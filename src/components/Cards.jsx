@@ -7,7 +7,7 @@ const Cards = ({ logement }) => {
 
 
   return (
-    <NavLink
+    <NavLink className="fiche"
       to={`/fichelogement/${logement.id}`}
       key={logement.id}
       state={{ logement }}

@@ -35,10 +35,6 @@
     font-size: 18px;
   }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-}
 
   
 @media screen and (max-width: 600px) {

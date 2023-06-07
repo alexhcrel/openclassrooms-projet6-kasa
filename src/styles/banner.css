@@ -35,6 +35,11 @@
 
   @media screen and (max-width: 600px) {
 
+.Banner {
+
+  max-width: 335px;
+}
+
     .Banner_accueil {
         height: 111px;
         width: 95%;
