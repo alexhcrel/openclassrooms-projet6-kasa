@@ -4,6 +4,7 @@ import Cards from "../components/Cards";
 import jsonData from "../data/logements.json";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import "../styles/index.css"
 
 const Home = () => {
   const [data, setData] = useState([]);

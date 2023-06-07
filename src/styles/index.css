@@ -131,8 +131,8 @@ table {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); {
   font-family: 'Montserrat', sans-serif;
-
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -143,8 +143,7 @@ body {
   display: flex;
   max-width: 1440px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
   background-color: #fcf7f7;
   font-family: "Montserrat", sans-serif;
   justify-content: center;
@@ -152,23 +151,21 @@ body {
 #root {
   max-width: 1440px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
   justify-content: center;
 }
-
-
 
 .page {
   display: flex;
   max-width: 1440px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
   flex-direction: column;
   align-items: center;
 }
 
+
+/* OK */
 .Banner_nav {
   display: flex;
   height: 171px;
@@ -179,107 +176,60 @@ body {
   align-items: center;
 }
 
-li {
-  list-style-type: none;
-  font-size: 24px;
-}
-
-h2 {
-  background-color: #ff6060;
-  color: #ffffff;
-  font-family: Montserrat;
-  font-weight: 400;
-}
-
+/* ok */
 .navigation ul {
   display: flex;
   gap: 57px;
 }
+
+/* ok */
 .navigation ul a {
   text-decoration: none;
-  /* padding: 10px; */
 }
+/* ok */
 .navigation ul a li {
   color: #ff6060;
   cursor: pointer;
 }
 
+/* ok */
 .navigation ul .nav-active {
  text-decoration: underline;
  color: #ff6060;
 }
 
-
-
-
-/*.navigation ul .nav-active::after {
-  content: "";
-  height: 4px;
-  width: 0;
-  background: #ff6060;
-  position: absolute;
-  border-radius: 10px;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-animation: anim 0.3s ease forwards;
-  animation: anim 0.6s ease forwards;
+/* ok */
+li {
+  list-style-type: none;
+  font-size: 24px;
 }
-@-webkit-keyframes anim {
-  to {
-    width: 100%;
-  }
-}
-@keyframes anim {
-  to {
-    width: 100%;
-  }
-}
-*/
+
+/* ----------------------------------------------a faire -------------------------------------------*/
 .Banner {
   margin-inline: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 223px;
   max-width: 1240px;
   width: 95%;
   border-radius: 20px;
-}
-.Banner_accueil {
-  margin-inline: auto;
-  height: 223px;
-  background: url(../assets/img/fond_gris.png), url(../assets/img/falaise.jpg);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* ok */
+.Banner_accueil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../assets/img/fond_gris.png), url(../assets/img/falaise.jpg);
+  background-position: center;
 }
 
 .BannerAbout {
-  height: 223px;
   background: url(../assets/img/fond_gris.png), url(../assets/img/lac.jpg);
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.Banner_fichelogement {
-  width: 1240px;
-  height: 415px;
-  background: url(../assets/img/fond_gris.png), url(../assets/img/loft.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .Banner_accueil h1 {
-  font-size: 48px;
-  margin-left: 10px;
-  color: rgb(243, 243, 243);
-}
-
-
-
-.Banner_about h1 {
   font-size: 48px;
   margin-left: 10px;
   color: rgb(243, 243, 243);
@@ -349,4 +299,29 @@ span {
   width: 209px;
   gap: 10px;
   justify-content: bottom;
+}
+
+
+@media screen and (max-width: 600px) {
+.Banner_nav {
+  height: 83px;
+  width: 95%;
+}
+.navigation ul {
+  gap: 10px;
+}
+li {
+  font-size: 18px;
+}
+.Banner_accueil {
+  height: 111px;
+  width: 95%;
+  justify-content: left;
+}
+
+.Banner_accueil h1 {
+  font-size: 24px;
+  margin-left: 16px;
+  width: 220px;
+}
 }
