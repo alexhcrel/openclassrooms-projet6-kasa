@@ -164,46 +164,6 @@ body {
   align-items: center;
 }
 
-
-/* OK */
-.Banner_nav {
-  display: flex;
-  height: 171px;
-  margin-inline: auto;
-  width: 95%;
-  max-width: 1240px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* ok */
-.navigation ul {
-  display: flex;
-  gap: 57px;
-}
-
-/* ok */
-.navigation ul a {
-  text-decoration: none;
-}
-/* ok */
-.navigation ul a li {
-  color: #ff6060;
-  cursor: pointer;
-}
-
-/* ok */
-.navigation ul .nav-active {
- text-decoration: underline;
- color: #ff6060;
-}
-
-/* ok */
-li {
-  list-style-type: none;
-  font-size: 24px;
-}
-
 /* ----------------------------------------------a faire -------------------------------------------*/
 .Banner {
   margin-inline: auto;
@@ -261,33 +221,6 @@ li {
 }
 
 
-.page_error {
-  color: #ff6060;
-  height: 1183px;
-}
-span {
-  display: flex;
-  justify-content: center;
-  font-size: 288px;
-  font-weight: 700;
-  line-height: 410px;
-}
-
-.message_erreur {
-  font-size: 36px;
-  margin-bottom: 190px;
-}
-
-.erreur {
-  margin-bottom: 159px;
-}
-.erreur a {
-  display: flex;
-  font-size: 36px;
-  justify-content: center;
-  color: #ff6060;
-}
-
 .collapse_about {
   margin-inline: auto;
   display: flex;
@@ -310,16 +243,7 @@ span {
 
 
 @media screen and (max-width: 600px) {
-.Banner_nav {
-  height: 83px;
-  width: 95%;
-}
-.navigation ul {
-  gap: 10px;
-}
-li {
-  font-size: 18px;
-}
+
 .Banner_accueil {
   height: 111px;
   width: 95%;
