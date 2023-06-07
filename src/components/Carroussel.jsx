@@ -36,15 +36,14 @@ const Carroussel = ({ objet }) => {
         {picturesArray.length !== 1 && (
           <React.Fragment>
             
-          
-              <div className="arrow leftArrow" onClick={goToPrevious}>
-                ‹
+          <div className="fleches">
+              <img onClick={goToPrevious} src ="../fleche-left.png" />
+         
+              <img onClick={goToPrevious} src ="../fleche-right.png" />
               </div>
-              <div className="arrow rightArrow" onClick={goToNext}>
-                ›
-              </div>
-              
-           
+              <div className="numerotation">
+        <p>{currentIndex + 1}/{picturesArray.length}</p>
+      </div>
           </React.Fragment>
         )}
       </div>

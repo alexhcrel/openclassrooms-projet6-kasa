@@ -1,21 +1,20 @@
-
-
 .carroussel {
-     max-width : 1240px;
-     width: 95%;
-    height: 415px;
-    margin-inline: auto;
-    border-radius: 25px;
+  max-width: 1240px;
+  width: 95%;
+  height: 415px;
+  margin-inline: auto;
+  border-radius: 25px;
 }
 
-.carroussel .sliderStyles { 
-    height: 415px;
-    width: 100%;
+.carroussel .sliderStyles {
+  height: 415px;
+  width: 100%;
 }
 
 .slideStyles {
-  width: 100%;
   display: flex;
+  width: 100%;
+  justify-content: center;
   position: relative;
   height: 415px;
   align-items: center;
@@ -24,16 +23,28 @@
   justify-content: space-between;
 }
 
-.arrow {
-font-size : 179px;
-color: white;
-cursor: pointer;
+.fleches {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  top: 50%;
+  padding-top: auto;
+  padding-inline: 23px;
 }
 
- .leftArrow {
-padding-left: 23px;  
+.numerotation {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  margin-inline: auto;
 }
 
-.rightArrow {
-    padding-right: 23px;  
-    }
+.numerotation p {
+  color: #ffffff;
+}
+
+img {
+  cursor: pointer;
+}
