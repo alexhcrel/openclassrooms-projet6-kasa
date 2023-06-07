@@ -224,16 +224,21 @@ li {
   background-position: center;
 }
 
-.BannerAbout {
-  background: url(../assets/img/fond_gris.png), url(../assets/img/lac.jpg);
-  background-position: center;
-}
-
+/* ok */
 .Banner_accueil h1 {
   font-size: 48px;
   margin-left: 10px;
   color: rgb(243, 243, 243);
 }
+
+/* ok */
+.BannerAbout {
+  background: url(../assets/img/fond_gris.png), url(../assets/img/lac.jpg);
+  background-position: center;
+}
+
+
+
 
 .footer {
   display: flex;
@@ -254,6 +259,8 @@ li {
   justify-content: center;
   margin-bottom: 55px;
 }
+
+
 .page_error {
   color: #ff6060;
   height: 1183px;
@@ -286,7 +293,7 @@ span {
   display: flex;
   padding-top: 31px;
   flex-direction: column;
-  width: 100%;
+  width: 95%;
   max-width: 1023px;
   height: auto;
   margin-bottom: 100px;
@@ -324,4 +331,12 @@ li {
   margin-left: 16px;
   width: 220px;
 }
+
+.collapse_about {
+  padding-top: 19px;
+  margin-bottom: 100px;
+  row-gap: 31px;
+}
+
+
 }
