@@ -164,8 +164,6 @@ body {
   align-items: center;
 }
 
-
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -185,7 +183,6 @@ body {
   justify-content: center;
   margin-bottom: 55px;
 }
-
 
 .collapse_about {
   margin-inline: auto;

@@ -8,9 +8,9 @@ import { NavLink } from 'react-router-dom';
 const Error = () => {
     return (
      
-        <div className='page page_error'>
+        <div className='page_erreur'>
             <Navigation />
-            <div className="erreur">
+            <div className='contenu'>
             <span>404</span>
             <div className="message_erreur"> Oups! La page que vous demandez n'existe pas</div>
             <NavLink
