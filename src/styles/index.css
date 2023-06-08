@@ -162,6 +162,13 @@ body {
   margin-inline: auto;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer {
@@ -206,7 +213,9 @@ body {
 
 
 @media screen and (max-width: 600px) {
-
+.home {
+  margin-right: 00px;
+}
 
 
 

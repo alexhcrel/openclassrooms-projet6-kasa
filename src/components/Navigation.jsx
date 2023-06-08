@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "./Logo";
 import "../styles/navigation.css"
 
 const Navigation = () => {
@@ -11,9 +10,10 @@ const Navigation = () => {
   
   return (
     <div className="Banner_nav">
-      <div>
-        <Logo />
-      </div>
+    
+      <img src ="../logo/kasa_red.svg" />
+        {/* <Logo /> */}
+   
 
       <div className="navigation">
         <ul>

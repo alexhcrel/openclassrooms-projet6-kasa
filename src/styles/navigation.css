@@ -9,6 +9,10 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .Banner_nav img {
+    height: 62px;
+  }
   
   /* ok */
   .navigation ul {
@@ -44,6 +48,11 @@
         height: 83px;
         width: 95%;
       }
+      
+      .Banner_nav img {
+        height: 43px;
+      }
+
       .navigation ul {
         gap: 10px;
       }
