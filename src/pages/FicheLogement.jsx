@@ -12,7 +12,7 @@ import '../styles/fichelogement.css';
 const FicheLogement = () => {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
+  useEffect((data) => {
     setData(jsonData);
   }, []);
 

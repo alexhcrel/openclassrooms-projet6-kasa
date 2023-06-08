@@ -10,7 +10,7 @@ const Collapse = ({ title, children }) => {
 
   return (
     <div className="valeurs">
-      <button className="collapse-title" onClick={toggleCollapse}>
+      <button className="collapse-title" style={{ border: 'none', outline: 'none' }} onClick={toggleCollapse}>
       {title}
       {isOpen ? (
         <img src ="../fleche-haut.png" alt="up-arrow" />
