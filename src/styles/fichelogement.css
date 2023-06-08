@@ -1,8 +1,14 @@
 
+.descriptifComplet {
+  width: 95%;
+  margin-inline: auto;
+}
+
 .descriptif_bandeau {
   display: flex;
   justify-content: space-between;
   max-width: 1240px;
+  width: 100%;
   margin-inline: auto;
   margin-top: 30px;
 }
@@ -14,95 +20,81 @@ h1 {
   margin-bottom: 8px;
 }
 
-p {
-  font-size: 18px;
-  font-weight: 400;
-  color: #ff6060;
+.descriptif_corps {
+  display: flex;
+  max-width: 1240px;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  margin-inline: auto;
+  margin-top: 24px;
 }
 
+.descriptif_corps div {
+  max-width: 582px;
+  width: 100%;
+}
 
-.descriptif_corps {
+.tags {
+  margin-top: 39px;
+  display: flex;
+  gap: 25px;
+}
+
+.tags h4 {
+  display: flex;
+  background-color: #ff6060;
+  color: #ffffff;
+  min-width: 115px;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  font-size: 14px;
+  border-radius: 50px;
+  padding-inline: 15px;
+}
+
+.host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  gap: 10px;
+  margin-bottom: 27px;
+}
+.host img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+.host h3 {
+  display: flex;
+  max-width: 100px;
+  text-align: right;
+}
+
+.descriptif_bandeau_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .descriptifComplet {
     display: flex;
-    max-width: 1240px;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 150px;
-    margin-inline: auto;
-    margin-top: 24px;
-  }
-  
-.descriptif_corps div{
-    max-width: 582px;
-    width: 100%;
-  }
-    
-
-  .tags {
-    margin-top: 39px;
-    display: flex;
-    gap: 25px;
-  }
-  
-  .tags h4 {
-    display: flex;
-    background-color: #ff6060;
-    color: #ffffff;
-    min-width: 115px;
-    align-items: center;
-    justify-content: center;
-    height: 25px;
-    font-size: 14px;
-    border-radius: 50px;
-  }
-  
-  .host {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 24px;
-    gap: 10px;
-    margin-bottom: 27px;
-  }
-  .host img {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-  }
-  
-  .host h3 {
-    display: flex;
-    max-width: 100px;
-    text-align: right;
+    flex-direction: column;
+    margin-top: 15px;
   }
 
-  .descriptif_bandeau_right {
- display: flex;
- flex-direction: column;
- justify-content: right;
+  .descriptif_bandeau {
+    flex-direction: column;
+    margin-inline: 20px;
+    margin-top: 0px;
   }
-
-  .stars {
-    display: flex;
-    justify-content: space-between;
-  }
-
-
-
-
-  @media screen and (max-width: 600px) {
-
-
-    .descriptifComplet {
-      display: flex;
-      flex-direction: column;
-      margin-top: 15px;
-    }
-    
-    .descriptif_bandeau {
-      flex-direction: column;
-      margin-inline: 20px;
-      margin-top: 30px;
-    }
-
-
-  }
+}
