@@ -182,13 +182,9 @@ body {
   justify-content: center;
 }
 
-.logo_white {
-  display: flex;
-  align-items: baseline;
-  width: 209px;
-  gap: 10px;
-  justify-content: center;
+.footer img{
   margin-bottom: 55px;
+  height: 36px;
 }
 
 .collapse_about {
