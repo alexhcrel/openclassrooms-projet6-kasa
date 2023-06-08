@@ -18,9 +18,9 @@ const Descriptif = ({ objet }) => {
 
   for (let i = 0; i < 5; i++) {
     if (i < note) {
-      items.push(<img key={`redstar-${i}`} src="../redstar.png" />);
+      items.push(<img key={`redstar-${i}`} src="../redstar.png" alt="red-start"/>);
     } else {
-      items.push(<img key={`greystar-${i}`} src="../greystar.png" />);
+      items.push(<img key={`greystar-${i}`} src="../greystar.png" alt="grey-star"/>);
     }
   }
 

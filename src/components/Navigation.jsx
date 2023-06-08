@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <div className="Banner_nav">
     
-      <img src ="../logo/kasa_red.svg" />
+      <img src ="../logo/kasa_red.svg" alt="Kasared-logo"/>
         {/* <Logo /> */}
    
 

@@ -13,9 +13,9 @@ const Collapse = ({ title, children }) => {
       <button className="collapse-title" onClick={toggleCollapse}>
       {title}
       {isOpen ? (
-        <img src ="../fleche-haut.png" />
+        <img src ="../fleche-haut.png" alt="up-arrow" />
       ) : (
-        <img src ="../fleche-bas.png" />
+        <img src ="../fleche-bas.png" alt="down-arrow"/>
       )}
     </button>
       {isOpen && (
