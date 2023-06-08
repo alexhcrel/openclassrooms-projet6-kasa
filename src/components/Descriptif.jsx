@@ -1,6 +1,6 @@
 import React from "react";
 import Collapse from "./Collapse";
-import '../styles/fichelogement.css';
+import "../styles/fichelogement.css";
 
 const Descriptif = ({ objet }) => {
   let tagsArray = [];
@@ -15,7 +15,7 @@ const Descriptif = ({ objet }) => {
 
   const note = objet.rating;
   const items = [];
-  
+
   for (let i = 0; i < 5; i++) {
     if (i < note) {
       items.push(<img key={`redstar-${i}`} src="../redstar.png" />);

@@ -1,13 +1,13 @@
 .valeurs {
   display: flex;
   flex-direction: column;
-  align-items: top;
   border-radius: 10px;
 }
 
 .valeur div {
   border-radius: 10px;
 }
+
 .collapse-title {
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@
   line-height: 34px;
   text-align: left;
   background-color: rgb(245, 239, 239);
-  padding-top: 29px;
+  padding-top: 22px;
   padding-bottom: 19px;
   border-radius: 10px;
   color: #ff6060;
@@ -57,9 +57,36 @@ button {
   width: 60px;
 }
 
-
 @media screen and (max-width: 600px) {
+  .collapse-title {
+    font-size: 13px;
+    height: 30px;
+  }
 
+  .valeurs {
+    padding-bottom: 20px;
+  }
 
+  .collapse-paragraph {
+    padding-top: 22px;
+    padding-bottom: 19px;
+    border-radius: 10px;
+    color: #ff6060;
+  }
 
+  .collapse-paragraph p {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 0px;
+  }
+
+  .collapse-paragraph li {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 0;
+  }
+
+  img {
+    height: 9px;
+  }
 }
