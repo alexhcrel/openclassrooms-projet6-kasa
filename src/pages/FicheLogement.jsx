@@ -4,8 +4,8 @@ import Descriptif from "../components/Descriptif";
 import jsonData from "../data/logements.json";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import Carroussel from "../components/Carroussel";
-import '../styles/carroussel.css';
+import Carrousel from "../components/Carrousel";
+import '../styles/carrousel.css';
 import '../styles/fichelogement.css';
 
 
@@ -25,7 +25,7 @@ const FicheLogement = () => {
     <div className="fichelogement">
 
       <Navigation />      
-      <div className="carroussel"><Carroussel key={objet.id} objet = {objet}/></div>
+      <div className="carrousel"><Carrousel key={objet.id} objet = {objet}/></div>
       <Descriptif key={objet.id.id} objet={objet} />
       <Footer />
     </div>

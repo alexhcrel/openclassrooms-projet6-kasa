@@ -1,7 +1,5 @@
-
-
 /* ok */
-.carroussel {
+.carrousel {
   max-width: 1240px;
   width: 95%;
   height: 415px;
@@ -9,7 +7,7 @@
 }
 
 /* ok */
-.carroussel .sliderStyles {
+.carrousel .sliderStyles {
   height: 100%;
   width: 100%;
   margin-inline: auto;
@@ -55,28 +53,22 @@ img {
   cursor: pointer;
 }
 
-
 @media screen and (max-width: 600px) {
-.fichelogement {
-  width: 100%;
-}
-
-  .carroussel {
-
-    width: 95%;
-    height: 255px;
-  
-  
+  .fichelogement {
+    width: 100%;
   }
 
-
+  .carrousel {
+    width: 95%;
+    height: 255px;
+  }
 
   .slideStyles {
     display: flex;
     width: 100%;
     justify-content: center;
     position: relative;
-  
+
     align-items: center;
     background-position: center;
     background-size: cover;
@@ -84,15 +76,12 @@ img {
     border-radius: 25px;
   }
 
-
   .fleches {
-height: 20px;
-top: 48%;
+    height: 20px;
+    top: 48%;
   }
 
   .numerotation {
     display: none;
   }
-
-
 }

@@ -1,9 +1,9 @@
 import React from "react";
 
-import "../styles/carroussel.css";
+import "../styles/carrousel.css";
 import { useState } from "react";
 
-const Carroussel = ({ objet }) => {
+const Carrousel = ({ objet }) => {
   // const isUnique = () =>{
 
   // }
@@ -51,4 +51,4 @@ const Carroussel = ({ objet }) => {
   );
 };
 
-export default Carroussel;
+export default Carrousel;
