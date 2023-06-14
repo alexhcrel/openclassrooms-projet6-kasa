@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import React from "react";
 import Descriptif from "../components/Descriptif";
 import jsonData from "../data/logements.json";
@@ -8,12 +8,19 @@ import Carrousel from "../components/Carrousel";
 import "../styles/carrousel.css";
 import "../styles/fichelogement.css";
 
+
 const FicheLogement = () => {
+
+  const navigate = useNavigate();
+
   const { logementId } = useParams();
 
   const objet = jsonData.find((item) => item.id === logementId);
 
+
+    navigate('error')
   return (
+
     <div className="fichelogement">
       <Navigation />
       <div className="carrousel">
