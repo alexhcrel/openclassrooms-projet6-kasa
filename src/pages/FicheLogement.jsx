@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import React from "react";
+import React, { useEffect } from "react";
 import Descriptif from "../components/Descriptif";
 import jsonData from "../data/logements.json";
 import Navigation from "../components/Navigation";
@@ -8,19 +8,22 @@ import Carrousel from "../components/Carrousel";
 import "../styles/carrousel.css";
 import "../styles/fichelogement.css";
 
-
 const FicheLogement = () => {
-
   const navigate = useNavigate();
-
   const { logementId } = useParams();
-
   const objet = jsonData.find((item) => item.id === logementId);
 
+  useEffect(() => {
+    if (typeof objet === "undefined") {
+      navigate("/error");
+    }
+  }, []);
 
-    navigate('error')
+  if (typeof objet === "undefined") {
+    return null;
+  }
+
   return (
-
     <div className="fichelogement">
       <Navigation />
       <div className="carrousel">
