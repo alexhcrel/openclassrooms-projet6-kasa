@@ -17,7 +17,7 @@ const FicheLogement = () => {
     if (typeof objet === "undefined") {
       navigate("/error");
     }
-  }, []);
+  }, [navigate, objet]);
 
   if (typeof objet === "undefined") {
     return null;
