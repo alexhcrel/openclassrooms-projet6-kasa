@@ -5,9 +5,6 @@ import "../styles/navigation.css"
 const Navigation = () => {
 
 
-
-
-  
   return (
     <div className="Banner_nav">
     

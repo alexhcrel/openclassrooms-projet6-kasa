@@ -7,7 +7,7 @@ const Carrousel = ({ objet }) => {
   // const isUnique = () =>{
 
   // }
-
+console.log(objet)
   const [currentIndex, setCurrentIndex] = useState(0);
 
   let picturesArray = [];
