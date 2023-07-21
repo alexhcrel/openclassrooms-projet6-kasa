@@ -9,7 +9,7 @@ const Footer = () => {
             
          
             <div>
-            © 2020 Kasa. All rights reserved
+            © 2020 Kasa.  All rights reserved
             </div>
         </div>
     );
