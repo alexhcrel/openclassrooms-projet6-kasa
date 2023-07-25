@@ -12,11 +12,11 @@ const App = () => {
         <Routes>
           <Route path="/projet_6_kasa" element={<Home />} />
           <Route
-            path={`/fichelogement/:logementId`}
+            path={`/projet_6_kasa/fichelogement/:logementId`}
             element={<Fichelogement />}
           />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<Error />} />{" "}
+          <Route path="/projet_6_kasa/about" element={<About />} />
+          <Route path="/projet_6_kasa/*" element={<Error />} />{" "}
         </Routes>
       </BrowserRouter>
     </div>
