@@ -8,14 +8,15 @@ const Navigation = () => {
   return (
     <div className="Banner_nav">
     
-      <img src ="../logo/kasa_red.svg" alt="Kasared-logo"/>
+    <img src="/logo/kasa_red.svg" alt="kasared-logo" />
+
         {/* <Logo /> */}
    
 
       <div className="navigation">
         <ul>
           <NavLink
-            to="/projet_6_kasa"
+            to="/"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             <li>Accueil</li>
