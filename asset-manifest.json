@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/projet_6_kasa/homepage/static/css/main.297031d9.css",
-    "main.js": "/projet_6_kasa/homepage/static/js/main.7b2f247a.js",
+    "main.js": "/projet_6_kasa/homepage/static/js/main.aa1848a4.js",
     "static/media/lac.jpg": "/projet_6_kasa/homepage/static/media/lac.c9f0f60d29c9bf698dfa.jpg",
     "static/media/falaise.jpg": "/projet_6_kasa/homepage/static/media/falaise.f4962aebe70eb02c8a7e.jpg",
     "index.html": "/projet_6_kasa/homepage/index.html",
     "main.297031d9.css.map": "/projet_6_kasa/homepage/static/css/main.297031d9.css.map",
-    "main.7b2f247a.js.map": "/projet_6_kasa/homepage/static/js/main.7b2f247a.js.map"
+    "main.aa1848a4.js.map": "/projet_6_kasa/homepage/static/js/main.aa1848a4.js.map"
   },
   "entrypoints": [
     "static/css/main.297031d9.css",
-    "static/js/main.7b2f247a.js"
+    "static/js/main.aa1848a4.js"
   ]
 }
