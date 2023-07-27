@@ -8,7 +8,7 @@ const Navigation = () => {
   return (
     <div className="Banner_nav">
     
-    <img src="/logo/kasa_red.svg" alt="kasared-logo" />
+    <img src="./logo/kasa_red.svg" alt="kasared-logo" />
 
         {/* <Logo /> */}
    
